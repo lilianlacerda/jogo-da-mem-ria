@@ -91,6 +91,28 @@ h2 {
     transform: rotateY(180deg);
 }
 
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #262626; /* Cor de fundo escura */
+    color: #ffffff; /* Cor do texto */
+    font-size: 1rem; /* Tamanho padrão da fonte */
+    font-family: Arial, sans-serif; /* Fonte legível */
+    text-align: center;
+    position: fixed; /* Sempre no final da tela */
+    bottom: 0;
+    left: 0;
+    z-index: 10; /* Certifique-se de que o footer esteja acima de outros elementos */
+}
+
+footer span {
+    color: #ffd700; /* Destaque para o nome de usuário */
+    font-weight: bold;
+}
+
 @media (max-width: 768px) {
     .container {
         padding: 20px 30px; /* Reduz o espaçamento interno */
@@ -116,6 +138,11 @@ h2 {
         width: 70px; /* Diminui os quadrados */
         height: 70px;
         font-size: 2em; /* Ajusta o tamanho da fonte */
+    }
+
+    footer {
+        font-size: 0.9rem; /* Diminui levemente o texto em telas médias */
+        padding: 8px 15px; /* Reduz o preenchimento */
     }
 }
 
@@ -145,5 +172,10 @@ h2 {
         width: 60px; /* Ajusta os quadrados */
         height: 60px;
         font-size: 1.5em; /* Fonte proporcional aos quadrados */
+    }
+
+    footer {
+        font-size: 0.8rem; /* Ajusta ainda mais o texto em telas pequenas */
+        padding: 5px 10px;
     }
 }
