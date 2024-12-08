@@ -90,3 +90,60 @@ h2 {
 .boxMath::after {
     transform: rotateY(180deg);
 }
+
+@media (max-width: 768px) {
+    .container {
+        padding: 20px 30px; /* Reduz o espaçamento interno */
+        gap: 20px; /* Reduz o espaço entre elementos */
+    }
+
+    h2 {
+        font-size: 2.5em; /* Reduz o tamanho do título */
+    }
+
+    .reset {
+        font-size: 1.2em; /* Diminui o texto do botão */
+        padding: 10px 15px; /* Reduz o preenchimento */
+    }
+
+    .game {
+        width: 320px; /* Ajusta a largura da área de jogo */
+        height: 320px; /* Ajusta a altura */
+        gap: 8px; /* Reduz o espaço entre os quadrados */
+    }
+
+    .item {
+        width: 70px; /* Diminui os quadrados */
+        height: 70px;
+        font-size: 2em; /* Ajusta o tamanho da fonte */
+    }
+}
+
+/* Ajustes para telas muito pequenas */
+@media (max-width: 480px) {
+    .container {
+        padding: 15px 20px; /* Reduz ainda mais o espaçamento */
+        gap: 15px;
+    }
+
+    h2 {
+        font-size: 2em; /* Ajusta o tamanho do título */
+    }
+
+    .reset {
+        font-size: 1em; /* Ajusta o botão para caber melhor */
+        padding: 8px 12px;
+    }
+
+    .game {
+        width: 280px; /* Área de jogo menor */
+        height: 280px;
+        gap: 5px; /* Espaçamento bem pequeno entre os quadrados */
+    }
+
+    .item {
+        width: 60px; /* Ajusta os quadrados */
+        height: 60px;
+        font-size: 1.5em; /* Fonte proporcional aos quadrados */
+    }
+}
